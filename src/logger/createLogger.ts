@@ -5,7 +5,7 @@ import {
 import * as winston from 'winston';
 import * as WinstonCloudwatch from 'winston-cloudwatch';
 
-export default function createLogger() {
+export function createLogger() {
   return WinstonModule.createLogger({
     handleExceptions: true,
     transports: [
